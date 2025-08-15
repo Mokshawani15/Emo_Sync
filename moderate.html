@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="mcss.css">
+    <title>Relaxation - Moderate Mood</title>
+</head>
+<body>
+    <header>
+        <h1>Relax & Recharge</h1>
+    </header>
+    <section>
+        <!-- Meditation Section -->
+        <div id="meditation-section">
+            <h3>Meditation</h3>
+            <p>
+                Meditation helps reduce stress, improves focus, and boosts overall well-being. Take a moment to connect with yourself and relax.
+            </p>
+            <img src="med.jpeg" id="m1">
+            <br>
+            <button id="showMeditation" onclick="showMeditationOptions()">Start Meditation</button>
+            <div id="meditation-options" style="display: none;">
+                <label for="meditation-time">Enter time (minutes):</label>
+                <input type="number" id="meditation-time" min="1" placeholder="e.g., 5">
+                <button onclick="startMeditation()">Start</button>
+                <p id="countdown-display" style="font-size: 1.2em; color: #00796b; margin-top: 10px;"></p>
+            </div>
+        </div>
+
+        <!-- Emergency Contacts Section -->
+        <div id="contacts-section">
+            <h3>Contact your loved ones</h3>
+            <p>
+                Conversations with people we trust can provide emotional relief and help us feel connected. It's important to talk about how you feel and know you're not alone.
+            </p>
+            <img src="call2.jpg" id="m2">
+            <br>
+            <button onclick="addEmergencyContact()">Add Contact</button>
+            <button onclick="wantToTalk()">I Want to Talk with Someone</button>
+            <button onclick="showContacts()">View Contacts</button>
+            <div id="saved-contacts">
+                <h4>Your Contacts:</h4>
+                <ul id="contact-list"></ul>
+            </div>
+        </div>
+<!-- Playlist Section -->
+<div id="playlist-section">
+    <h3>Recommended Relaxing Playlist</h3>
+    <img src="music.webp" id="m3">
+    <ul id="playlist-ul">
+        <li><a href="https://youtu.be/bP9gMpl1gyQ?si=Z5XcyrjtaE2rI2Zj" target="_blank">Relaxing Songs</a></li>
+        <li><a href="https://open.spotify.com/playlist/lofi_playlist" target="_blank">Lofi Vibes</a></li>
+    </ul>
+
+    <!-- Form to add user playlists -->
+    <div id="add-playlist-form">
+        <input type="text" id="playlist-name" placeholder="Enter playlist name" required>
+        <input type="url" id="playlist-url" placeholder="Enter playlist link" required>
+        <button id="add-playlist-btn">Add Playlist</button>
+    </div>
+</div>
+
+</body>
+</html>

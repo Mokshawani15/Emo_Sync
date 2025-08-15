@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="ncss.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <title>My Digital Scrapbook</title>
+</head>
+<body>
+    <header>
+        <h1>My Digital Scrapbook</h1>
+    </header>
+    <section>
+        <div id="scrapbook">
+            <p>Added photos will appear here:</p>
+        </div>
+        <div id="controls">
+            <input type="file" id="imageUpload" multiple>
+            <br><br>
+            <button id="addPhotosBtn">Add Photos</button>
+            <button id="createPageBtn">Create Page</button>
+            <button id="viewPagesBtn">View All Pages</button>
+        </div>
+        <textarea id="pageText" placeholder="Write about your memory here..."></textarea>
+        <input type="text" id="tags" placeholder="Enter tags (e.g., vacation, family)">
+        <div id="audioDiary">
+            <h3>Record Your Audio Diary:</h3>
+            <button id="recordAudioBtn">Start Recording</button>
+            <button id="stopRecordingBtn" disabled>Stop Recording</button>
+            <audio id="audioPlayer" controls></audio>
+        </div>
+    </section>
+    <script src="njava.js"></script>
+</body>
+</html>

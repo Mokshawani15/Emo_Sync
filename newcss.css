@@ -1,0 +1,91 @@
+body {
+    font-family: 'Courier New', monospace;
+    background: linear-gradient(to bottom, #fefcf4, #ffeb99); /* Background gradient */
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-image: url('scrapback.jpeg'); /* Custom yellow-themed header */
+    background-size: cover;
+    background-position: center;
+    height: 200px;
+    text-align: center;
+    padding: 20px;
+    font-size: 2.3em;
+    color: #ffffff;
+    font-family: 'Georgia', serif;
+    border-bottom: 6px solid #d9894e;
+}
+
+#pagesContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Align multiple pages in the center */
+    gap: 20px; /* Spacing between pages */
+    padding: 20px;
+}
+
+.scrapbook-page {
+    background: #fdfdfd; /* Off-white notebook color */
+    width: 60%; /* Further reduced size of the page box */
+    margin: 15px 0;
+    padding: 20px;
+    border: 2px solid #e3e3e3;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: relative;
+    background-image: repeating-linear-gradient(#ddd 0.5px, transparent 0.5px);
+    background-size: 100% 40px;
+}
+
+.scrapbook-page img {
+    max-width: 50%; /* Smaller image size */
+    border-radius: 15px;
+    margin-left: 40px;
+    margin: 20px auto; /* Centers the image */
+    display: grid; /* Centers properly */
+    border: 3px dotted #e09017; /* Dotted border */
+    padding: 15px; /* Moves the border slightly away from the image */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.scrapbook-slider {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.scrapbook-slider img {
+    display: none; /* Hide all images by default */
+}
+
+.scrapbook-slider img.active {
+    display: block; /* Show only the active image */
+}
+
+.scrapbook-slider button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #ffffff;
+    border: 2px solid #d9894e;
+    color: #d9894e;
+    font-size: 1em;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.scrapbook-slider button:hover {
+    background: #d9894e;
+    color: #ffffff;
+}
+
+.scrapbook-slider .prev {
+    left: 10px;
+}
+
+.scrapbook-slider .next {
+    right: 10px;
+}

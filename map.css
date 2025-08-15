@@ -1,0 +1,41 @@
+/* General Page Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: #f4f4f4;
+}
+
+/* Header Styling */
+h1 {
+    color: #333;
+    margin-top: 20px;
+}
+
+/* Map Container */
+#map {
+    width: 90%;
+    height: 500px;
+    margin: 20px auto;
+    border-radius: 10px;
+    border: 2px solid #ccc;
+}
+
+/* Back Button */
+.back-button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+}
+
+.back-button:hover {
+    background-color: #0056b3;
+}

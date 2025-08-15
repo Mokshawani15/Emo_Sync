@@ -1,0 +1,61 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-image: url('pexels-skyriusmarketing-2129796.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    text-align: center;
+    margin: 0;
+}
+
+header {
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 20px;
+    font-size: 2em;
+}
+
+#info-section, #contacts-section, #playlist-section, #meditation-section {
+    margin-left: 300px;
+    margin-right: 300px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.681);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+button {
+    margin: 10px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background: #113fe6;
+    color: white;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+button:hover {
+    background: #4db6ac;
+    transform: scale(1.05);
+}
+
+#image-gallery img {
+    margin: 10px;
+    width: 150px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+#m1{
+    width:300px;
+    height: auto;
+}
+#m2{
+    width:300px;
+    height: auto;
+}
+#m3{
+    width:300px;
+    height:auto;
+}
